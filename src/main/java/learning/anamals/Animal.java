@@ -4,9 +4,9 @@ abstract class Animal implements Runnable {
     private String name;
     private double weight;
     private boolean gender;
+    Animal(String name,double )
 
-
-    public Animal(String name, double weight, boolean gender) {
+    Animal(String name, double weight, boolean gender) {
         this.name = name;
         this.weight = weight;
         this.gender = gender;
