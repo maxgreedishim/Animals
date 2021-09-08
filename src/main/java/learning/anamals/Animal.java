@@ -23,7 +23,7 @@ abstract class Animal implements Runnable {
         while (weight > 0) {
             weight -= 0.2;
             if (weight <= 0.1){
-                System.out.println("Животное " + name + " погибло от голода." + " " + makeSound());
+                System.out.println(makeSound() + ". Животное " + name + " погибло от голода."  );
                 break;
             }
             System.out.println("Вес = " + weight + " " + name);
