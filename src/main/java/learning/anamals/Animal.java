@@ -21,14 +21,18 @@ abstract class Animal implements Runnable {
     @Override
     public void run () {
         while (weight > 0) {
-            weight -= 0.5;
+            weight -= 0.2;
+            if (weight <= 0.1){
+                System.out.println("Животное " + name + " погибло от голода.");
+                break;
+            }
             System.out.println("Вес = " + weight + " " + name);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Животное " + name + " погибло от голода.");
+
     }
 }

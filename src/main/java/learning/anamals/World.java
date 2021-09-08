@@ -11,11 +11,11 @@ public class World {
         animals.add(new Cat("Мура", 3 , false));
 //        for (Animal animal : animals) System.out.println(animal);
         for (Animal animal : animals) new Thread(animal).start();
-        try {
-            while (true)Thread.sleep(1000);
-        } catch (Exception e){
-            System.out.printf(String.valueOf(e));
-        }
+//        try {
+//            while (true)Thread.sleep(1000);
+//        } catch (Exception e){
+//            System.out.printf(String.valueOf(e));
+//        }
 
     }
 }
