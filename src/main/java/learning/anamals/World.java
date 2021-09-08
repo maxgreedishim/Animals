@@ -9,7 +9,7 @@ public class World {
     public static void main(String[] args) {
         animals.add(new Dog("Шарик", 12 ,true));
         animals.add(new Cat("Мура", 3 , false));
-//        for (Animal animal : animals) System.out.println(animal);
+        for (Animal animal : animals) System.out.println(animal);
         for (Animal animal : animals) new Thread(animal).start();
 //        try {
 //            while (true)Thread.sleep(1000);
