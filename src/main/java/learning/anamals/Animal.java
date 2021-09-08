@@ -4,7 +4,6 @@ abstract class Animal implements Runnable {
     private String name;
     private double weight;
     private boolean gender;
-    Animal(String name,double )
 
     Animal(String name, double weight, boolean gender) {
         this.name = name;
@@ -12,10 +11,12 @@ abstract class Animal implements Runnable {
         this.gender = gender;
     }
 
+
     abstract String makeSound();
 
     @Override
     public String toString() {
+
         return  "Меня зовут " + name + ". " + makeSound() + "!";
     }
     @Override

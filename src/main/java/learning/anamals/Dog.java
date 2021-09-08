@@ -1,16 +1,16 @@
 package learning.anamals;
 
-class Dog extends Animal{
+class Dog extends Animal {
 
-   public Dog(String name, double w, boolean g) {
+    public Dog(String name, double w, boolean g) {
 
-       super(name,w,g);
+        super(name,w,g);
 
-   }
+    }
 
+    @Override
+    String makeSound() {
 
-   @Override
-   String makeSound() {
         return "Гав";
     }
 }
