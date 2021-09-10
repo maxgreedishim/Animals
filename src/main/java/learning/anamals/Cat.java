@@ -2,7 +2,7 @@ package learning.anamals;
 
 class Cat extends Animal {
     private final int CAT_WEIGHT = 3000;
-    private final int CAT_PORTION = 100;
+    private final double CAT_PORTION = 200;
 
 
 

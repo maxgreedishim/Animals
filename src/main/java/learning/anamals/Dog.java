@@ -2,7 +2,7 @@ package learning.anamals;
 
 class Dog extends Animal {
     private final int DOG_WEIGHT = 10000;
-    private final int DOG_PORTION = 500;
+    private final double DOG_PORTION = 500;
 
     @Override
     double getPortion () {

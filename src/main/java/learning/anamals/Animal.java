@@ -41,14 +41,6 @@ abstract class Animal implements Runnable {
 
     abstract String makeSound();
 
-    /*
-   String Animal(String name) {
-        if (gender){
-            return "Мальчик";
-        }
-        return "Девочка";
-    } так делать не нужно
-    */
     void feed () {
         weight += getPortion();
     }
@@ -66,7 +58,7 @@ abstract class Animal implements Runnable {
         System.out.println(this);
         while (weight > 0) {
             feed();
-            weight -= getPortion() * World.cat_lose;
+            weight -= getPortion() * World.getslimmingFactor();
             if (weight <= 100){
                 System.out.println(makeSound() + ". Я, " + name + ", " + (gender? "погиб" : "погибла") + " от голода.");
                 break;
