@@ -8,6 +8,7 @@ abstract class Animal implements Runnable {
 
 
     Animal() {
+
         new Thread(this).start();
     }
 
@@ -42,7 +43,11 @@ abstract class Animal implements Runnable {
     abstract String makeSound();
 
     void feed () {
+
         weight += getPortion();
+    }
+    void slim () {
+        weight -= getPortion() * World.getSlimmingFactor();
     }
 
     abstract double getPortion();
@@ -58,7 +63,8 @@ abstract class Animal implements Runnable {
         System.out.println(this);
         while (weight > 0) {
             feed();
-            weight -= getPortion() * World.getslimmingFactor();
+            slim ();
+
             if (weight <= 100){
                 System.out.println(makeSound() + ". Я, " + name + ", " + (gender? "погиб" : "погибла") + " от голода.");
                 break;
