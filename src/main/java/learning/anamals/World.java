@@ -35,8 +35,8 @@ public class World { // Главный класс проэкта
 /*        animals.add(new Dog("Шарик"));
         animals.add(new Cat("Мура", false));*/
         animals.add(new Cat("Барсик")); // добавляем животных в список
-        /*animals.add(new Dog("Жучка", 6000,false));
-        for (Animal animal : animals) System.out.println(animal);*/
+        animals.add(new Dog("Жучка", 6000,false));
+
 
 
     }
